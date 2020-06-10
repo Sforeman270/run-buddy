@@ -3,8 +3,9 @@
     <head>
        <title> Run Buddy</title>
        <link href= "/Users/shadreaforeman/Desktop/projects/run-buddy/assests/style/style 2.css/style.css"  rel="stylesheet" type="text/css" >
+       <link href="#privacy-policy.html">
        <meta charset="UTF-8"/>
-       <meta name="viewport" content="device-width, initial-scale=1.0">
+       <meta name="viewport" content=" width=device-width, initial-scale=1.0">
     </head>
     <body>
         
@@ -25,16 +26,16 @@
                <a href="#your-trainers"> Your Trainers</a>
            </li>
            <li>
-               <a href="#reach-out">Reach Out</a>
+               <a href="#service-plans">Service Plans</a>
            </li>
            <li>
-               <a href="#service-plans">Service Plans</a>
+               <a href="#reach-out">Reach Out</a>
            </li>
          </ul>
          </nav>
         </header>
          <section class="hero">
-            <div class="hero=cta">
+            <div class="hero-cta">
              <h2>Start Building Habits</h2>
                <p>
                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
@@ -98,7 +99,8 @@
             </div>
             <div class="step">
                 <h3>Step 1.</h3>
-                <div class="step-img">
+                <div class="step-info">
+                  <div class="step-img">
                     <img src="../assests/images/svg/step-1.svg" alt="" />
                 </div>
                 <div class="step-text">
@@ -147,16 +149,19 @@
 
         <section id="your-trainers">
             <div class="flex-row">
-             <h2 class="section-title primary-border">
+             <h2 class="section-title primary-border your-trainers-h2">
               Meet the Trainers 
              </h2>
             </div>
             <div class="trainers">
               <article class="trainer">
-                  <img src="../assests/images/trainers/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
-                  <div class="trainer-bio text-left">
-                      <h3>Arron Stephens</h3>
-                      <h4>Speed / Strength</h4>
+                  <div class="trainer-img trainer-1">
+                    <div>
+                        <h3>Arron Stephens</h3>
+                        <h4>Speed / Strength</h4>
+                    </div>
+                  </div>
+                  <div class="trainer-bio">
                       <p>
                           Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Sequi neque animi quo cupiditate commodi saepe culpa sed
                           itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
@@ -164,35 +169,84 @@
                     </div>
               </article>
               <article class="trainer">
-                <img src="../assests/images/trainers/trainer-2.jpg" alt="Joanna Gill cooling off after a workout." />
-                    <div class="trainer-bio text-right">
+                 <div class="trainer-img trainer-2">
+                     <div>
                         <h3>Joanna Gill</h3>
                         <h4>Endurance</h4>
-                        <p>
+                     </div>
+                 </div>
+                    <div class="trainer-bio">
+                       <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Sequi neque animi cupiditate commdi saepe culpa sed
                             itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                        </p>
+                      </p>
                     </div>
-                   
-                </article>
+                    </article>
                 <article class="trainer">
-                    <img src="../assests/images/trainers/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights." />
-                    <div class="trainer-bio text-left">
-                        <h3>Harry "the Headband" Smith</h3>
-                        <h4>Strength</h4>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Sequi neque animi quo cupiditate commodi saepe culpa sed
-                            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                        </p>
+                    <div class="trainer-img trainer-3">
+                        <div>
+                            <h3>Harry "the Headband" Smith</h3>
+                            <h4>Strength</h4>
                         </div>
+                    </div>
+                        <div class="trainer-bio">
+                            <p>
+                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Sequi neque animi quo cupiditate commodi saepe culpa sed
+                                itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                            </p>
+                         </div>
                 </article>
             </div>
 
         </section>
-          <section id="service-plans" class="services">
+          
+        <section id="reach-out" class="contact">
+          <div class="flex-row">
             <h2 class="section-title secondary-border">
+              Reach Out
+            </h2>
+         </div>
+
+            <div class="contact-info">
+                <div>
+                    <h3>Run Buddy</h3>
+                    <p>
+                        Any questions or concerns before signing up?
+                        <br />
+                        Let us know and we'll be happy to talk to you!
+                    </p>
+                    <address>
+                        55 Main Street <br />
+                        Some Town, Ca <br />
+                        12345<br/>
+                        P: 555.RUN.BUDZ (555.786.2839)<br />
+                        E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a><br />
+                    </address>
+                </div>
+                <div class="contact-form">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" placeholder="Your Name" />
+     
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" place-holder="Message"></textarea>
+     
+                        <button type="submit">Submit</button>
+                     </form>
+                  </div>
+             
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.278014484778!2d-93.41808098495338!3d44.77513718717697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f63d63c05c9fbf%3A0x7ce61f59d3fae211!2s8046%20Old%20Carriage%20Ct%2C%20Shakopee%2C%20MN%2055379!5e0!3m2!1sen!2sus!4v1590822946382!5m2!1sen!2sus" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="">
+                 </iframe>
+            </div>
+
+        </section>
+        <section id="service-plans" class="services">
+            <div class="flex-row">
+               <h2 class="section-title secondary-border" id="osp">
                         Our Service Plans
-          </h2>
+             </h2>
+            </div>
          </section>
             <div class="service-grid-wrapper">
                <div class="service-grid-container">
@@ -220,7 +274,7 @@
                 </div>
 
                 <div class="service-grid-item basic">
-                    N/A
+                    N/A    
                 </div>   
                 
                 <div class="service-grid-item premium">
@@ -244,51 +298,10 @@
                 </div>
             </div> 
         </div>
-        <section id="reach-out" class="contact">
-          <div class="flex-row">
-            <h2 class="section-title secondary-border">
-              Reach Out
-            </h2>
-         </div>
-
-            <div class="contact-info">
-                <div>
-                    <h3>Run Buddy</h3>
-                    <p>
-                        Any questions or concerns before signing up?
-                        <br />
-                        Let us know and we'll be happy to talk to you!
-                    </p>
-                    <address>
-                        55 Main Street <br />
-                        Some Town, Ca <br />
-                        12345<br/>
-                        P: 555.RUN.BUDZ (555.786.2839)<br />
-                        E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-                    </address>
-                </div>
-                <div class="contact-form">
-                    <h3>Contact Us></h3>
-                    <form>
-                        <label for="contact-name">Your Name</label>
-                        <input type="text" id="contact-name" placeholder="Your Name" />
-     
-                        <label for="contact-message">Message</label>
-                        <textarea id="contact-message" place-holder="Message"></textarea>
-     
-                        <button type="submit">Submit</button>
-                     </form>
-                  </div>
-             
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.278014484778!2d-93.41808098495338!3d44.77513718717697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f63d63c05c9fbf%3A0x7ce61f59d3fae211!2s8046%20Old%20Carriage%20Ct%2C%20Shakopee%2C%20MN%2055379!5e0!3m2!1sen!2sus!4v1590822946382!5m2!1sen!2sus" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="">
-                 </iframe>
-            </div>
-
-        </section>
         <footer>
              <h2>❤️ Made with love by Run Buddy</h2>
                 <div>
-                 <a href="#"> Read Our Privacy Policy</a><br />
+                 <a href="privacy-policy.html"> Read Our Privacy Policy</a><br />
                     &copy; 2019 Run Buddy, Inc.
                 </div>
         </footer>

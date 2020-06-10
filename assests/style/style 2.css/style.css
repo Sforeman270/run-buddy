@@ -7,7 +7,7 @@ body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
-
+/* Header*/
 header {
     padding:20px 35px;
     background-color: #39a6b2;
@@ -28,11 +28,21 @@ header {
 header a {
      text-decoration: none;
      color: #fce138;
-}   
+}  
+header h1 {
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 36px;
+    color: #fce138;
+    text-shadow: 0 0 10px rgba(0,0,0,0,.5);
+} 
+
+ /* Navigation */
   header nav {
       margin: 7px 0;
 }
-    
+  
+
   header nav ul {
       display: flex;
       flex-wrap: wrap;
@@ -43,40 +53,18 @@ header a {
 
 
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0,0,0,0,.5);
 }
-header h1 {
-    font-weight: bold;
-    padding: 10px 15px;
-    font-size: 36px;
-    color: #fce138;
-    text-shadow: 0 0 10px rgba(0,0,0,0,.5);
-}
-footer {
+header nav ul li a:hover {
     background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer h2 {
     color: #024e76;
-    font-size: 30px;
-    margin: 0;
+    border-radius: 15px;
+    text-shadow: none;
 }
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-footer a {
-    color: #024e76;
-}
+/* Hero */
 .hero {
     background-image: url("../../images/hero-bg.jpg");
     background-size: cover;
@@ -90,20 +78,56 @@ footer a {
 }
 .hero-form {
     border: 3px solid #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225,56, 0.8);
     padding: 20px;
      color: #024e76;
      margin: 3.5%;
      box-shadow: 0 0 10px rgba(0,0,0,0,0.5);
      border-radius: 15px;
+     width: 40%;
 }
 .hero-form h3 {
     font-size: 24px;
     margin: 0;
 }
-hero-form p {
+.hero-form p {
     margin: 5px 0 15px 0;
 }
+
+.hero-form label{
+    margin: 0 5px;
+}
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+}
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    text-shadow:  0 0 10px rgba(0,0,0,0,0,rgba(0,0,0,0,.5));
+}
+.hero-form button {
+    color:#fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.hero-form button:hover {
+    color: #fce138;
+    background-color: #024e76;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #39a6b2;
+}
+
 .form-input {
     border:1 px solid #024e76;
     display: block;
@@ -115,22 +139,35 @@ hero-form p {
     border-radius: 10px;
     background-color: rgba(255,255,255, 0.75);
 }
+.contact-form {
+    border: 1px solid #024e76;
+    display: inline;
+    padding: 7px 15px;
+    margin: 3.5%;
+    font-size: 16px;
 
+}
 .form-input:focus {
     background-color: rgba(255,255,255, 1);
     outline: none;
 }
-.hero-form label{
-     margin: 0 5px;
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color:  rgba(#024e76);
+    outline: none;
 }
-.hero-form button:hover {
-    color: #fce138;
-    background-color: #024e76;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    background-color: #39a6b2;
+
+
+.trainer-1 {
+    background-image: url(../../images/trainers/trainer-1.jpg);
+    background-size: cover;
+}
+.trainer-2 {
+    background-image: url(../../images/trainers/trainer-2.jpg);
+    background-size: cover;
+}
+.trainer-3 {
+    background-image: url(../../images/trainers/trainer-3.jpg);
+    background-size: cover;
 }
 
 
@@ -143,12 +180,7 @@ hero-form p {
     text-align: center;
 }
 
-.section-title {
-    font-size: 55px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    text-align: center;
-}
+
 .primary-border {
     border-color: #fce138;
 }
@@ -156,6 +188,7 @@ hero-form p {
     border-color: #39a6b2;
 }
 
+/* Steps*/
 .step h3 {
     color: #024e76;
     font-size: 46px;
@@ -170,162 +203,12 @@ hero-form p {
 .steps {
     background: #fce138;
 }
-.steps h2 {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #39a6b2;
-}
-.trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.trainer {
-    margin: 20px;
-    background: #024e76;
-    color: #fce138;
-    flex: 1;
-    
-}
-.trainer img{
-    width: 35%;
-    width: 100%;
-    overflow: auto;
-}
-.trainer-bio {
-    padding: 25px;
-    overflow: auto;
-    line-height: 1.3;
-}
-.text-left {
-    text-align: left;
-}
-.text-right {
-    text-align: right;
-}
-.trainer-bio h3 {
-    font-size: 28px;
-}
-.trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-.trainer-bio p {
-    font-size: 17px;
-}
-.section-title {
-    font-size: 48px;
-    padding:0 50px 20px 50px;
-    border-bottom: 3px solid;
-    margin-bottom: 35px;
-    color: #024e76;
-}
-
-.contact{
-    color: #024e76;
-    border-bottom-color: teal;
-    background-color: #fce138;
-}
-
-.section-title {
-    border-bottom-color: #39a6b2;
-    padding-bottom: 20px;
-    margin: 0 auto 35px auto;
-    width: 50%;
-    text-align: center;
-    color: #024e76;
-}
-.contact-info iframe {
-    height: 400px;
-}
-.contact-info div {
-    color: white;
-}
-.contact-info h3 {
-    color: #fce138;
-    font-size: 32px;
-}
-.contact-info p, .contact-info address {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
-}
-.contact-info a {
-    color: #fce138;
-}
-
-.contact-info> * {
-    flex: 1;
-    margin:15px;
-}
-
-.contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-}
-
-.contact-form button:hover {
-    width: 100%;
-    border: none;
-    background: #fce138;
-    color: #024e76;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 10px;
-    color:#fce138;
-    background-color: #39a6b2;
-}
-
-.hero-secondary {
-    margin: 20px;
-    background-color: black;
-    font-size: 20px;
-    color: red;
-}
-h2 {
-    color: teal;
-}
-
-.hero-cta h2 {
-    width: 35%;
-    text-align: right;
-    margin: 3.5%;
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.2;
-    font-style: italic;
-    font-size: 55px;
-    color: #fce138;
-    text-shadow:  0 0 10px rgba(0,0,0,0,0,rgba(0,0,0,0,.5));
-}
-.flex-row {
-    display:flex;
-}
-
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: #024e76;
-}
 
 .step {
     margin: 50px auto;
+    padding-bottom: 50px;
     width: 80%;
+    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -356,6 +239,166 @@ h2 {
     border-bottom: 1px solid #39a6b2;
 }
 
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+
+/* Trainers*/
+.trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.trainer {
+    margin: 20px;
+    background: #024e76;
+    color: #fce138;
+    flex: 1;
+    
+}
+.trainer-img{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+}
+  
+.trainer-bio {
+    padding: 25px;
+    overflow: auto;
+    line-height: 1.3;
+}
+
+.trainer-img::before{
+    content: "";
+    height:100%;
+    width:100%;
+    background: rgtba(252,225,56, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba (252, 225, 56, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trainer-bio h3 {
+    font-size: 28px;
+}
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.trainer-bio p {
+    font-size: 17px;
+}
+
+
+.contact{
+    color: #024e76;
+    border-bottom-color: teal;
+    background-color: #024e76;
+
+}
+.contact h2{
+    color: #fce138;
+}
+
+.section-title {
+    border-bottom: 3px solid #39a6b2;
+    font-size: 48px;
+    padding-top: 15px;
+     padding-bottom: 20px;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    text-align: center;
+    color: #024e76;
+}
+.your-trainers-h2 {
+    border-bottom-color: #fce138;
+}
+
+.contact-info iframe {
+    height: 400px;
+}
+
+.contact-info div {
+    color: white;
+}
+.contact-info h3 {
+    color: #fce138;
+     font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.contact-info a {
+    color: #fce138;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin:15px;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.hero-form button:hover {
+    background-color: #39a6b2;
+}
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+
+h2 {
+    color: teal;
+}
+
+/* CSS Grid*/
 .service-grid-container {
     background: lightyellow;
     width: 80%;
@@ -386,9 +429,6 @@ h2 {
     justify-content: center;
 }
 
-.section-title {
-    text-align: center;
-}
 
 .service-grid-item.basic {
     grid-column:2 / span 1;
@@ -403,9 +443,13 @@ h2 {
     grid-row: 1 / -1;
     transform: rotate(180deg);
 }
-.service-grid-item.both {
-    grid-column: 1 / -1;
+.service-grid-item.cancel {
+    transform: none;
+    writing-mode: unset;
+    grid-column: 1 /-1;
+    grid-row: -1;
 }
+
 .grid-head, .grid-price, .service-grid-item.cancel {
     font-size: 1.5rem;
     font-weight: bold;
@@ -436,7 +480,7 @@ h2 {
     left: -30px;
 }
 
-.radio-wrapper label:: before {
+.radio-wrapper label::before {
     border-radius: 50%;
 }
 
@@ -471,6 +515,47 @@ h2 {
     top: 1px;
     transform: rotate(-58deg);
 }
+
+.trainer-1 {
+    background-image: url("<../../../../images/trainers/trainer-1.jpg");
+}
+
+
+/* Footer*/
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+footer a {
+    color: #024e76;
+}
+/* Utility Classes*/
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.flex-row {
+    display:flex;
+}
+
+/* Media Queries*/
 @media screen and (max-width: 980px) {
     header {
        padding-bottom: 0;
@@ -486,16 +571,14 @@ h2 {
         width: 100%;
         justify-content: center;
     }
-    header nav ul li a:hover{
+    header nav ul li a:hover {
         font-size: 20px;
         background: #fce138;
         color: #024e76;
         border-radius: 15px;
         text-shadow: none;
     }
-
-    
-
+ 
     .footer h2, footer div {
         text-align: center;
         width: 100%;
@@ -517,8 +600,8 @@ h2 {
     .contact-info iframe{
         flex: 1 100%;
     }
+    
 }
-
 
 @media screen and (max-width: 768px) {
     section {
@@ -563,6 +646,7 @@ h2 {
     }
 }
 
+
 @media screen and (max-width: 575px) {
     .hero-form button {
         width: 100%;
@@ -570,11 +654,14 @@ h2 {
     .section-title {
         width: 95%;
     }
-    .intro p{
+    .intro p {
         width: 100%;
     }
     .trainer {
-        width: 100%;
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
     }
     .contact-info>* {
         flex: 0 100%;
