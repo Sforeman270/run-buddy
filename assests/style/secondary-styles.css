@@ -1,5 +1,5 @@
 .hero {
-    background-position: bottom;
+   background-position: bottom;
     height: auto;
     text-align: center;
     margin-bottom: 40px;
@@ -9,9 +9,9 @@
     display: inline-block;
     border-bottom: 4px solid #fce138;
     padding: 0 80px 15px 80px;
-    font-size: 42px;
-    font-weight: normal;
+     font-weight: normal;
     font-style: italic;
+    font-size: 42px;
 }
 .secondary-content {
     width: 80%;
@@ -36,7 +36,7 @@
     margin: 10px 0 10px 0;
 }
 .section{
-    padding: 100px;
+    padding: 125px;
 }
 
 
