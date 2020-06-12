@@ -13,8 +13,8 @@ A website that offers fitness training services.  Two tiers of client services a
 
 ## Website
 
-https://github.com/Sforeman270/run-buddy
-
+ https://sforeman270.github.io/run-buddy/
+ 
 ## Contribution
 
 Made with ❤️ by Shadrea Foreman
